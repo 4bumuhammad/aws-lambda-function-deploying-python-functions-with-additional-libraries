@@ -70,6 +70,25 @@ Begin :
 
 &nbsp;
 
+**Code :**
+<pre>
+    ❯ vim lambda_function.py
+
+
+
+        import json
+        import requests
+
+        def lambda_handler(event, context):
+            response=requests.get("https://us-central1-zeta-structure-296509.cloudfunctions.net/dns-record-query?record_name={}&record_type={}")
+            return {
+                'statusCode': 200,
+                'body': json.dumps(response)
+            }
+</pre>
+
+&nbsp;
+
 To create the deployment package (virtual environment).
 <pre>
     ❯ pip show requests
@@ -91,20 +110,24 @@ To create the deployment package (virtual environment).
 
     ❯ cd .venv/lib/python3.10/site-packages
 
-    ❯ zip -r ../../../../my_deployment_package.zip .
+    ❯ zip -r ../../../../../my_deployment_package.zip .
 </pre>
 
 <pre>
-    ❯ cd ../../../../
+    ❯ cd ../../../../../
 
-    ❯ ls -lah
+    ❯ ls -lah | grep -E '.zip|dns-record-query'
+ 
+        drwxr-xr-x   5 &lt;user&gt;  staff   160B Apr 15 13:10 dns-record-query
+        -rw-r--r--@  1 &lt;user&gt;  staff   6.6M Apr 15 13:11 my_deployment_package.zip
+
+    ❯ zip -g ../my_deployment_package.zip lambda_function.py
     
-        total 13488
-        drwxr-xr-x  5 &lt;user&gt;  staff   160B Apr 15 12:58 .
-        drwxr-xr-x@ 8 &lt;user&gt;  staff   256B Apr 15 11:43 ..
-        drwxr-xr-x  6 &lt;user&gt;  staff   192B Apr 15 11:46 .venv
-        -rw-r--r--  1 &lt;user&gt;  staff   284B Apr 15 11:51 lambda_function.py
-        -rw-r--r--  1 &lt;user&gt;  staff   6.6M Apr 15 12:58 my_deployment_package.zip
+        adding: lambda_function.py (deflated 29%)              
+</pre>
+
+<pre>
+
 </pre>
 
 &nbsp;
