@@ -129,6 +129,17 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+<div align="center">
+    <img src="./gambar-petunjuk/ss_006_aws_lambda_upload_file.png" alt="ss_006_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_007_aws_lambda_code_source.png" alt="ss_007_aws_lambda_code_source" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
 
 ---
 
