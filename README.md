@@ -2,14 +2,17 @@
 
 &nbsp;
 
-<!-- Reference : <br />
--   Docs | dev.aryya.id Swagger
+Reference : <br />
+<!-- -   Docs | dev.aryya.id Swagger
     <pre>http://dev.aryya.id/#/default/get_dns_record_query</pre> 
 
 -   YT | Mendeploy Python Function Dengan Library Tambahan di AWS Lambda | AWS Tutorial Bahasa Indonesia
-    <pre>https://www.youtube.com/watch?v=PjKM2RyQ-v8</pre>
-    4.53s
-    -->
+    <pre>https://www.youtube.com/watch?v=PjKM2RyQ-v8</pre> -->
+
+-   Docs | Working with .zip file archives for Python Lambda functions
+    <pre>https://docs.aws.amazon.com/lambda/latest/dg/python-package.html</pre>
+
+&nbsp;
 
 &nbsp;
 
@@ -64,6 +67,49 @@ Begin :
         setuptools         58.1.0
         urllib3            2.2.1    
 </pre>
+
+&nbsp;
+
+To create the deployment package (virtual environment).
+<pre>
+    ❯ pip show requests
+
+        Name: requests
+        Version: 2.31.0
+        Summary: Python HTTP for Humans.
+        Home-page: https://requests.readthedocs.io
+        Author: Kenneth Reitz
+        Author-email: me@kennethreitz.org
+        License: Apache 2.0
+        Location: /Users/.../aws-lambda-function-deploying-python-functions-with-additional-libraries/dns-record-query/.venv/lib/python3.10/site-packages
+        Requires: certifi, charset-normalizer, idna, urllib3
+        Required-by:
+</pre>
+
+<pre>
+    ❯ deactivate
+
+    ❯ cd .venv/lib/python3.10/site-packages
+
+    ❯ zip -r ../../../../my_deployment_package.zip .
+</pre>
+
+<pre>
+    ❯ cd ../../../../
+
+    ❯ ls -lah
+    
+        total 13488
+        drwxr-xr-x  5 &lt;user&gt;  staff   160B Apr 15 12:58 .
+        drwxr-xr-x@ 8 &lt;user&gt;  staff   256B Apr 15 11:43 ..
+        drwxr-xr-x  6 &lt;user&gt;  staff   192B Apr 15 11:46 .venv
+        -rw-r--r--  1 &lt;user&gt;  staff   284B Apr 15 11:51 lambda_function.py
+        -rw-r--r--  1 &lt;user&gt;  staff   6.6M Apr 15 12:58 my_deployment_package.zip
+</pre>
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
