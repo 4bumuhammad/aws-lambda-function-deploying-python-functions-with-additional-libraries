@@ -149,6 +149,10 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 ---
 
 &nbsp;
@@ -451,6 +455,40 @@ Create a deployment package with the installed library at the root.
         -rw-r--r--   1 &lt;user&gt;  staff   417B Apr 15 16:20 lambda_function.py
         drwxr-xr-x  13 &lt;user&gt;  staff   416B Apr 15 22:39 package
 </pre>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+---
+
+&nbsp;
 
 **Deployment package while using virtualenv**<br />
 
