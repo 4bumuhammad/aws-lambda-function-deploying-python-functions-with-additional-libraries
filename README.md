@@ -634,6 +634,41 @@ Insert the additional `lambda_function.py` file into the resulting `deployment-p
 
 &nbsp;
 
+Upload Code source from .zip file.
+<div align="center">
+    <img src="./gambar-petunjuk/ss_013_aws_lambda_upload_file.png" alt="ss_013_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_014_aws_lambda_upload_file.png" alt="ss_014_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_015_aws_lambda_code_properties.png" alt="ss_015_aws_lambda_code_properties" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_016_aws_lambda_result.png" alt="ss_016_aws_lambda_result" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/successful_small.png" alt="successful_small" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;
