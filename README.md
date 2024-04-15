@@ -125,7 +125,7 @@ To create the deployment package (virtual environment).
 
 &nbsp;
 
-Insert the additional lambda_function.py file into the resulting my_deployment_package.zip file
+Insert the additional `lambda_function.py` file into the resulting `my_deployment_package.zip` file
 <pre>
     ❯ zip -g ../my_deployment_package.zip lambda_function.py
     
