@@ -20,6 +20,15 @@ Endpoint source :
 
 &nbsp;
 
+Environment : 
+<pre>
+    ❯ python --version
+
+        Python 3.10.3
+</pre>
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;
