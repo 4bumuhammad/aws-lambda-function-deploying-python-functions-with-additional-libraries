@@ -77,7 +77,7 @@ Environment :
 &nbsp;
 
 ### Begin :
-**Deployment package with no dependency**<br />
+**&#x1F680; Deployment package with no dependency**<br />
 
 <pre>
     ❯ mkdir 01-code-project-basic
