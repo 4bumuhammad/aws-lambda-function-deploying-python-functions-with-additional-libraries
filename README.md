@@ -4,7 +4,9 @@
 
 <!-- Reference : <br />
 -   Docs | dev.aryya.id Swagger
-    <pre>http://dev.aryya.id/#/default/get_dns_record_query</pre> -->
+    <pre>http://dev.aryya.id/#/default/get_dns_record_query</pre> 
+    4.53s
+    -->
 
 &nbsp;
 
@@ -28,6 +30,37 @@ Environment :
 </pre>
 
 &nbsp;
+
+Begin : 
+<pre>
+    ❯ mkdir dns-record-query
+
+    ❯ cd dns-record-query
+
+    ❯ touch lambda_function.py
+</pre>
+
+&nbsp;
+
+<pre>
+    ❯ python3 -m venv .venv
+
+    ❯ source .venv/bin/activate
+
+    ❯ pip install request
+
+    ❯ pip list
+
+        Package            Version
+        ------------------ --------
+        certifi            2024.2.2
+        charset-normalizer 3.3.2
+        idna               3.7
+        pip                22.0.4
+        requests           2.31.0
+        setuptools         58.1.0
+        urllib3            2.2.1    
+</pre>
 
 &nbsp;
 
