@@ -8,7 +8,7 @@
 
 &nbsp;
 
-Expectations :
+Endpoint source :
 <pre>
     ❯ curl -X 'GET' \
     'https://us-central1-zeta-structure-296509.cloudfunctions.net/dns-record-query?record_name=detik.com&record_type=A' \
