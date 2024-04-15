@@ -151,6 +151,14 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+<div align="center">
+    <img src="./gambar-petunjuk/successful_small.png" alt="successful_small" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+&nbsp;
+
 &nbsp;
 
 ---
