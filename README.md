@@ -521,20 +521,6 @@ Upload Code source from .zip file.
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 ---
 
 &nbsp;
