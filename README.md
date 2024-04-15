@@ -532,24 +532,54 @@ Upload Code source from .zip file.
 ---
 
 <pre>
-    ❯ vim lambda_function.py
+    ❯ cd 02-code-project-with-dependency
+
+
+    ❯ source .venv/bin/activate
+
+
+    ❯ pip list
+
+        Package    Version
+        ---------- -------
+        pip        22.0.4
+        setuptools 58.1.0 
 
 
 
-        import json
-        import requests
+    ❯ pip install requests
 
-        def lambda_handler(event, context):
-            response=requests.get("https://us-central1-zeta-structure-296509.cloudfunctions.net/dns-record-query?record_name={}&record_type={}")
-            return {
-                'statusCode': 200,
-                'body': json.dumps(response)
-            }
+        Collecting requests
+        Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+        Collecting urllib3<3,>=1.21.1
+        Using cached urllib3-2.2.1-py3-none-any.whl (121 kB)
+        Collecting certifi>=2017.4.17
+        Using cached certifi-2024.2.2-py3-none-any.whl (163 kB)
+        Collecting idna<4,>=2.5
+        Using cached idna-3.7-py3-none-any.whl (66 kB)
+        Collecting charset-normalizer<4,>=2
+        Using cached charset_normalizer-3.3.2-cp310-cp310-macosx_11_0_arm64.whl (120 kB)
+        Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+        Successfully installed certifi-2024.2.2 charset-normalizer-3.3.2 idna-3.7 requests-2.31.0 urllib3-2.2.1
+
+
+
+    ❯ pip list
+
+        Package            Version
+        ------------------ --------
+        certifi            2024.2.2
+        charset-normalizer 3.3.2
+        idna               3.7
+        pip                22.0.4
+        requests           2.31.0
+        setuptools         58.1.0
+        urllib3            2.2.1        
 </pre>
 
 &nbsp;
 
-To create the deployment package (virtual environment).
+Find the site-packages location of the installed request dependencies.
 <pre>
     ❯ pip show requests
 
@@ -560,36 +590,46 @@ To create the deployment package (virtual environment).
         Author: Kenneth Reitz
         Author-email: me@kennethreitz.org
         License: Apache 2.0
-        Location: /Users/.../aws-lambda-function-deploying-python-functions-with-additional-libraries/dns-record-query/.venv/lib/python3.10/site-packages
+        Location: /Users/.../aws-lambda-function-deploying-python-functions-with-additional-libraries/02-code-project-with-dependency/.venv/lib/python3.10/site-packages
         Requires: certifi, charset-normalizer, idna, urllib3
         Required-by:
 </pre>
 
+&nbsp;
+
+Deactivate the virtual environment.
 <pre>
     ❯ deactivate
-
-    ❯ cd .venv/lib/python3.10/site-packages
-
-    ❯ zip -r ../../../../../my_deployment_package.zip .
-</pre>
-
-<pre>
-    ❯ cd ../../../../../
-
-    ❯ ls -lah | grep -E '.zip|dns-record-query'
- 
-        drwxr-xr-x   5 &lt;user&gt;  staff   160B Apr 15 13:10 dns-record-query
-        -rw-r--r--@  1 &lt;user&gt;  staff   6.6M Apr 15 13:11 my_deployment_package.zip
-
 </pre>
 
 &nbsp;
 
-Insert the additional `lambda_function.py` file into the resulting `my_deployment_package.zip` file
 <pre>
-    ❯ zip -g ../my_deployment_package.zip lambda_function.py
-    
-        adding: lambda_function.py (deflated 29%)              
+    ❯ cd .venv/lib/python3.10/site-packages
+
+    ❯ zip -r ../../../../deployment-package-venv.zip .
+</pre>
+
+&nbsp;
+
+<pre>
+    ❯ cd ../../../../
+
+    ❯ ls -lah | grep -E '.zip|.venv|.py'
+ 
+            drwxr-xr-x   6 &lt;user&gt;  staff   192B Apr 16 05:02 .venv
+            -rw-r--r--   1 &lt;user&gt;  staff   6.6M Apr 16 05:09 deployment-package-venv.zip
+            -rw-r--r--@  1 &lt;user&gt;  staff   881K Apr 15 23:02 deployment-package.zip
+            -rw-r--r--   1 &lt;user&gt;  staff   417B Apr 15 16:20 lambda_function.py
+</pre>
+
+&nbsp;
+ 
+Insert the additional `lambda_function.py` file into the resulting `deployment-package-venv.zip` file
+<pre>
+    ❯ zip -g ./deployment-package-venv.zip lambda_function.py
+
+        adding: lambda_function.py (deflated 45%)              
 </pre>
 
 &nbsp;
