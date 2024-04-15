@@ -1,4 +1,4 @@
-# AWS Lambda : Deploying Python Functions with Additional Libraries in AWS Lambda.
+# &#x1F6A9; AWS Lambda : Deploying Python Functions with Additional Libraries in AWS Lambda.
 
 &nbsp;
 
