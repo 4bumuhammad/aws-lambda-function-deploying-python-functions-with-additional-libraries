@@ -116,6 +116,8 @@ Add the lambda_function.py file to the root of the .zip file.
         -rw-r--r--   1 &lt;user&gt;  staff   180B Apr 15 14:01 lambda_function.py        
 </pre>
 
+&nbsp;
+
 Upload Code source from .zip file.
 <div align="center">
     <img src="./gambar-petunjuk/ss_005_aws_lambda_upload_file.png" alt="ss_005_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
