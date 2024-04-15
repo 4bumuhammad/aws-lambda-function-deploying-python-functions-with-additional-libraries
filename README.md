@@ -30,7 +30,7 @@ Endpoint source :
 
 &nbsp;
 
-### Set up aws lambda functions in the aws management console :
+### &#x1F530; Set up aws lambda functions in the aws management console :
 
 <div align="center">
     <img src="./gambar-petunjuk/ss_001_aws_lambda_create_function.png" alt="ss_001_aws_lambda_create_function" style="display: block; margin: 0 auto;">
@@ -98,7 +98,7 @@ Begin :
 
 &nbsp;
 
-**Code :**
+**&#x1F680; Code :**
 <pre>
     ❯ vim lambda_function.py
 
