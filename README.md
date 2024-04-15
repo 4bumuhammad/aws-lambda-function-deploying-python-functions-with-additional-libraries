@@ -21,7 +21,7 @@ Reference : <br />
 
 &nbsp;
 
-Endpoint source :
+Endpoint source (for `03-code-project-dns-record-query`):
 <pre>
     ❯ curl -X 'GET' \
     'https://us-central1-zeta-structure-296509.cloudfunctions.net/dns-record-query?record_name=detik.com&record_type=A' \
@@ -55,6 +55,10 @@ Endpoint source :
 
 &nbsp;
 
+<div align="center">
+    <img src="./gambar-petunjuk/ss_004_aws_lambda_triggers.png" alt="ss_004_aws_lambda_triggers" style="display: block; margin: 0 auto;">
+</div> 
+
 &nbsp;
 
 ---
@@ -70,40 +74,52 @@ Environment :
 
 &nbsp;
 
-Begin : 
-<pre>
-    ❯ mkdir dns-record-query
+&nbsp;
 
-    ❯ cd dns-record-query
+### Begin :
+**Deployment package with no dependency**<br />
+
+<pre>
+    ❯ mkdir 01-code-project-basic
+
+    ❯ cd 01-code-project-basic
 
     ❯ touch lambda_function.py
 </pre>
 
-&nbsp;
+&#x1F680; Code :
 
 <pre>
-    ❯ python3 -m venv .venv
+    ❯ vim lambda_function.py
 
-    ❯ source .venv/bin/activate
 
-    ❯ pip install request
 
-    ❯ pip list
+        import json
 
-        Package            Version
-        ------------------ --------
-        certifi            2024.2.2
-        charset-normalizer 3.3.2
-        idna               3.7
-        pip                22.0.4
-        requests           2.31.0
-        setuptools         58.1.0
-        urllib3            2.2.1    
+        def lambda_handler(event, context):
+            # TODO implement
+            return {
+                'statusCode': 200,
+                'body': json.dumps('Hello from zipped file in Lambda!')
+            }
 </pre>
+
+---
 
 &nbsp;
 
-**&#x1F680; Code :**
+**Deployment package with dependency**<br />
+
+&nbsp;
+
+&nbsp;
+
+**Deployment package while using virtualenv**<br />
+
+&nbsp;
+
+---
+
 <pre>
     ❯ vim lambda_function.py
 
