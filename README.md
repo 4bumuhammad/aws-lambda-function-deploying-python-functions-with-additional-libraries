@@ -141,6 +141,14 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+<div align="center">
+    <img src="./gambar-petunjuk/ss_008_aws_lambda_result.png" alt="ss_008_aws_lambda_result" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+&nbsp;
+
 ---
 
 &nbsp;
