@@ -155,6 +155,37 @@ Upload Code source from .zip file.
 
 **Deployment package with dependency**<br />
 
+<pre>
+    ❯ mkdir 02-code-project-with-dependency
+
+    ❯ cd 02-code-project-with-dependency
+
+    ❯ touch lambda_function.py
+</pre>
+
+&#x1F680; Code :
+<pre>
+    ❯ vim lambda_function.py
+
+
+
+        import requests
+        import json
+
+        def lambda_handler(event, context):   
+            response = requests.get("https://www.example.com/")
+            confirmation_message = "GET request to 'https://www.example.com/' was successful."
+            data = {
+                'confirmation_message': confirmation_message,
+                'page_content': response.text
+            }
+            print(data)
+            return {
+                'statusCode': 200,
+                'body': json.dumps(data)
+            }
+</pre>
+
 &nbsp;
 
 &nbsp;
