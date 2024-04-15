@@ -28,6 +28,34 @@ Endpoint source :
 
 &nbsp;
 
+&nbsp;
+
+### Set up aws lambda functions in the aws management console :
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_001_aws_lambda_create_function.png" alt="ss_001_aws_lambda_create_function" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_002_aws_lambda_add_trigger.png" alt="ss_002_aws_lambda_add_trigger" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/ss_003_aws_lambda_trigger_configuration.png" alt="ss_003_aws_lambda_trigger_configuration" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
+&nbsp;
+
+---
+
+&nbsp;
+
 Environment : 
 <pre>
     ❯ python --version
