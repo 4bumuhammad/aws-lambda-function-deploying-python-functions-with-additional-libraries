@@ -81,7 +81,7 @@ Environment :
 &nbsp;
 
 ### Begin :
-**&#x1F680; Deployment package with no dependency**<br />
+### &#x1F530; Deployment package with no dependency
 
 <pre>
     ❯ mkdir 01-code-project-basic
@@ -157,7 +157,7 @@ Upload Code source from .zip file.
 
 &nbsp;
 
-**Deployment package with dependency**<br />
+### &#x1F530; Deployment package with dependency
 
 <pre>
     ❯ mkdir 02-code-project-with-dependency
@@ -490,7 +490,7 @@ Create a deployment package with the installed library at the root.
 
 &nbsp;
 
-**Deployment package while using virtualenv**<br />
+### &#x1F530; Deployment package while using virtualenv
 
 &nbsp;
 
