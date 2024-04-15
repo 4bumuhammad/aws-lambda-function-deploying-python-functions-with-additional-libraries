@@ -5,6 +5,9 @@
 <!-- Reference : <br />
 -   Docs | dev.aryya.id Swagger
     <pre>http://dev.aryya.id/#/default/get_dns_record_query</pre> 
+
+-   YT | Mendeploy Python Function Dengan Library Tambahan di AWS Lambda | AWS Tutorial Bahasa Indonesia
+    <pre>https://www.youtube.com/watch?v=PjKM2RyQ-v8</pre>
     4.53s
     -->
 
