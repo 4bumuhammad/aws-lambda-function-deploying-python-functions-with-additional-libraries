@@ -188,6 +188,11 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+Install the requests library to a new package directory.
+<pre>
+
+</pre>
+
 &nbsp;
 
 **Deployment package while using virtualenv**<br />
