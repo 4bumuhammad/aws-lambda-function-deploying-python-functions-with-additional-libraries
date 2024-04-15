@@ -466,6 +466,16 @@ Create a deployment package with the installed library at the root.
 
 &nbsp;
 
+Add the lambda_function.py file to the root of the zip file.
+
+<pre>
+    ❯ zip deployment-package.zip lambda_function.py
+
+        adding: lambda_function.py (deflated 45%)
+</pre>
+
+&nbsp;
+
 Upload Code source from .zip file.
 <div align="center">
     <img src="./gambar-petunjuk/ss_009_aws_lambda_upload_file.png" alt="ss_009_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
