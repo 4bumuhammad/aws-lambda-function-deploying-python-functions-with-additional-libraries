@@ -121,13 +121,15 @@ To create the deployment package (virtual environment).
         drwxr-xr-x   5 &lt;user&gt;  staff   160B Apr 15 13:10 dns-record-query
         -rw-r--r--@  1 &lt;user&gt;  staff   6.6M Apr 15 13:11 my_deployment_package.zip
 
+</pre>
+
+&nbsp;
+
+Insert the additional lambda_function.py file into the resulting my_deployment_package.zip file
+<pre>
     ❯ zip -g ../my_deployment_package.zip lambda_function.py
     
         adding: lambda_function.py (deflated 29%)              
-</pre>
-
-<pre>
-
 </pre>
 
 &nbsp;
