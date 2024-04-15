@@ -31,6 +31,10 @@ Endpoint source (for `03-code-project-dns-record-query`):
         {"record_name":"detik.com","record_type":"A","result":["203.190.242.211","103.49.221.211"]}
 </pre>
 
+---
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;
