@@ -7,11 +7,16 @@ Reference : <br />
     <pre>http://dev.aryya.id/#/default/get_dns_record_query</pre> 
 
 -   YT | Mendeploy Python Function Dengan Library Tambahan di AWS Lambda | AWS Tutorial Bahasa Indonesia
-    <pre>https://www.youtube.com/watch?v=PjKM2RyQ-v8</pre> -->
+    <pre>https://www.youtube.com/watch?v=PjKM2RyQ-v8</pre> 
+    6.39s
+
+-->
 
 -   Docs | Working with .zip file archives for Python Lambda functions
     <pre>https://docs.aws.amazon.com/lambda/latest/dg/python-package.html</pre>
-
+    
+-   Docs | aws lambda working with python
+    <pre>https://github.com/csemanish12/aws-lambda?tab=readme-ov-file#readme</pre>
 &nbsp;
 
 &nbsp;
