@@ -88,7 +88,6 @@ Environment :
 </pre>
 
 &#x1F680; Code :
-
 <pre>
     ❯ vim lambda_function.py
 
@@ -103,6 +102,27 @@ Environment :
                 'body': json.dumps('Hello from zipped file in Lambda!')
             }
 </pre>
+
+&nbsp;
+
+Add the lambda_function.py file to the root of the .zip file.
+<pre>
+    ❯ zip deployment-package.zip lambda_function.py
+
+        adding: lambda_function.py (deflated 20%)
+
+    ❯ ls -lah
+        -rw-r--r--   1 &lt;user&gt;  staff   330B Apr 15 17:14 deployment-package.zip
+        -rw-r--r--   1 &lt;user&gt;  staff   180B Apr 15 14:01 lambda_function.py        
+</pre>
+
+Upload Code source from .zip file.
+<div align="center">
+    <img src="./gambar-petunjuk/ss_005_aws_lambda_upload_file.png" alt="ss_005_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
+</div> 
+
+&nbsp;
+
 
 ---
 
