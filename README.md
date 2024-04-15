@@ -466,6 +466,12 @@ Create a deployment package with the installed library at the root.
 
 &nbsp;
 
+Upload Code source from .zip file.
+<div align="center">
+    <img src="./gambar-petunjuk/ss_009_aws_lambda_upload_file.png" alt="ss_009_aws_lambda_upload_file" style="display: block; margin: 0 auto;">
+</div>
+
+
 &nbsp;
 
 &nbsp;
