@@ -679,6 +679,13 @@ Upload Code source from .zip file.
 
 &nbsp;
 
+### &#x1F682; Project 03-code-project-dns-record-query using Deployment packages with dependencies
+
+&nbsp;
+
+&nbsp;
+
+
 <div align="center">
     <img src="./gambar-petunjuk/well_done.png" alt="well_done" style="display: block; margin: 0 auto;">
 </div> 
