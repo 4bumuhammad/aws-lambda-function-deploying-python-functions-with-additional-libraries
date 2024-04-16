@@ -681,10 +681,32 @@ Upload Code source from .zip file.
 
 ### &#x1F3C4; Project 03-code-project-dns-record-query using Deployment packages with dependencies
 
+
+<pre>
+    ❯ mkdir 03-code-project-dns-record-query
+
+    ❯ cd 03-code-project-dns-record-query
+
+    ❯ touch lambda_function.py
+</pre>
+
+&nbsp;
+
+&#x1F680; Code :
+<pre>
+    ❯ vim lambda_function.py
+
+</pre>
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
 
 <div align="center">
     <img src="./gambar-petunjuk/well_done.png" alt="well_done" style="display: block; margin: 0 auto;">
