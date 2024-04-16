@@ -679,7 +679,7 @@ Upload Code source from .zip file.
 
 &nbsp;
 
-### &#x1F682; Project 03-code-project-dns-record-query using Deployment packages with dependencies
+### &#x1F3C4; Project 03-code-project-dns-record-query using Deployment packages with dependencies
 
 &nbsp;
 
